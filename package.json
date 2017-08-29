@@ -9,8 +9,8 @@
     "url": "https://github.com/BrandwatchLtd/brandwatch-react-auth.git"
   },
   "scripts": {
-    "demo": "yarn prepublish && webpack-dev-server --config ./demo/webpack.config.js",
-    "prepublish": "BABEL_ENV=production rollup -c",
+    "demo": "yarn prepublishOnly && webpack-dev-server --config ./demo/webpack.config.js",
+    "prepublishOnly": "BABEL_ENV=production rollup -c",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
