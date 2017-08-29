@@ -23,7 +23,9 @@ export default class BrandwatchReactAuth extends Component {
       loggedIn: undefined,
     };
 
-    props.onCreateStore(this.store);
+    if (props.onCreateStore) {
+      props.onCreateStore(this.store);
+    }
   }
 
   componentWillMount() {
